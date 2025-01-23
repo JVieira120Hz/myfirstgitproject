@@ -1,0 +1,12 @@
+#include  <iostream>
+
+    int numero;
+
+    int main(){
+
+
+        std::cout << "introduz um número: ";
+        std::cin  >> numero;
+        std::cout << "O número introduzido é: "
+                  << numero << std::endl;
+    }
