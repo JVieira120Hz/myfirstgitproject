@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-    char palavra[] = "programação"; 
+    char palavra[] = "programation"; 
     int tentativas = 6;
     int tamanhoPalavra = 11;
     bool letrasDescobertas[11] = {false};
 
-    cout << "Bem-vindo ao Jogo da Forca!" << endl;
+    cout << "Boas Welcome ao Jogo da Forca!" << endl;
 
     while (tentativas > 0) {
         cout << "\nTentativas restantes: " << tentativas << endl;
@@ -37,9 +37,9 @@ int main() {
         }
         if (!letraEncontrada) {
             tentativas--;
-            cout << "A letra '" << letra << "' não está na palavra!" << endl;
+            cout << "A letra '" << letra << "' não tá na palavra!" << endl;
         } else {
-            cout << "Boa! Você acertou a letra '" << letra << "'." << endl;
+            cout << "Boa! Tu acertáste a letra '" << letra << "'." << endl;
         }
         
         bool ganhou = true;
@@ -51,7 +51,7 @@ int main() {
         }
         
         if (ganhou) {
-            cout << "\nParabéns! Você ganhou!" << endl;
+            cout << "\nParabéns! Tu ganháste!" << endl;
             for (int i = 0; i < tamanhoPalavra; i++) {
                 cout << palavra[i] << " ";
             }
@@ -61,7 +61,7 @@ int main() {
     }
 
     if (tentativas == 0) {
-        cout << "\nVocê perdeu! A palavra era: " << palavra << endl;
+        cout << "\nTu perdeste! A palavra era: " << palavra << endl;
     }
 
     return 0;
